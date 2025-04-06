@@ -47,14 +47,14 @@ def depositar():
 
 def exibirExtrato():
    
-   print("\n--- Extrato Bancário ---")
-if len(extrato) == 0:
-        print("Não há transações registradas.")
-else:
+    print("\n--- Extrato Bancário ---")
+
+    if extrato == 0:
+        print(f"O extrato {transacao}")
+    else:
         for transacao in extrato:
             print(transacao)
-        print(f"Saldo Atual: R${saldo_bancario:.2f}")
-        
+                   
 
 while True:
 
